@@ -22,11 +22,5 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # - name: Start Server
-      #   run: npm start &
-
-      # - name: Wait For Server
-      #   run: npx wait-on http://localhost:3001
-
       - name: Run Component Tests
         run: npm run test-component
