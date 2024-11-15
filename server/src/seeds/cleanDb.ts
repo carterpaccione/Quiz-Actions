@@ -9,7 +9,7 @@ export default async (modelName: "Question", collectionName: string) => {
       })
       .toArray();
 
-    if (modelExists.length) {
+    if (modelExists?.length) {
       await db.dropCollection(collectionName);
     }
   } catch (err) {
